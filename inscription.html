@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <title> Candidater  </title>
+    </head>
+    <body>
+        <form action="insert.php" method="post" enctype="multipart/form-data">
+            <fieldset class="formulaire">
+                
+            <div>
+                <h2><span "color:blue ;"> Inscriptions BTS SIO :</span> </h2>
+
+            
+                <label for="name"><br>  Nom :<span style="color: red;">*</span> </label>&nbsp;
+                <input type="text" id="nom" name="TXTnom" required/><br>
+
+                <label for="name"> <br> Prénom :<span style="color: red;">*</span> </label>&nbsp;
+                <input type="text" id="prenom" name="TXTprenom" required/><br>
+
+                <label for="photo"><br>  Photo :</label>&nbsp;
+                <input type="file" id="photo" name="filephoto" accept="image/*"/><br>
+                <input type="reset" value="Annuler">
+
+                <label for="fileCV"> <br> CV :<span style="color: red;">*</span> </label>&nbsp;
+                <input type="file" id="cv" name="fileCV" value="CV (format.pdf)" required/><br>
+                <input type="reset" value="Annuler"><br>
+
+                <label for="groupe"><br>Groupe :<span style="color: red;">*</span> </label>
+                
+                  <select name="groupe">
+                  <option value="SISR1">SISR1</option>
+                  <option value="SISR2">SISR2</option>
+                  <option value="SLAM2">SLAM2</option>
+                  <option value="SLAM1">SLAM1</option>
+                  <!-- Ajoutez d'autres options au besoin -->
+                  </select>
+
+                <div class="boutons">
+                 <pre><pre><input type="submit" id="Valider" name="BOvalider" value="Confirmer" class="appuyer"/></pre></pre>
+                 <input type="reset" id="Valider" name="BOvalider" value="Réinitialiser" calss="retour"/>
+            </div>
+            </div>
+
+        </fieldset>
+            
+               
+           
+        </form>
+    </body>
+</html>
